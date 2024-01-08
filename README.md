@@ -11,8 +11,9 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
 brew install grpcurl
 ```
 # コードの生成
-```cd api```
 ```
+cd api
+
 protoc --go_out=../pkg/grpc --go_opt=paths=source_relative \
 	--go-grpc_out=../pkg/grpc --go-grpc_opt=paths=source_relative \
 	sample.proto
