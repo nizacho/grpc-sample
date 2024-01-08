@@ -36,3 +36,7 @@ grpcurl -plaintext localhost:8080 list myapp.GreetingService
 ```
 grpcurl -plaintext -d '{"name": "hsaki"}' localhost:8080 myapp.GreetingService.Hello
 ```
+## クライアントの起動
+```
+go run cmd/client/main.go
+```
